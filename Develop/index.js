@@ -4,49 +4,68 @@ const fs = require("fs");
 
 // TODO: Create an array of questions for user input
 const questions = [
-  {
-    type: "input",
-    name: "title",
-    message: "What is the title of your application?",
-  },
-  {
-    type: "input",
-    name: "description",
-    message: "Give a brief description of what the project is:",
-  },
-  {
-    type: "input",
-    name: "purpose",
-    message:
-      "What is the intended purpose of the application? What problem is it trying to solve?",
-  },
-  {
-    type: "input",
-    name: "use",
-    message:
-      "What functions will the user need to use the application once it is installed?",
-  },
-  {
-    type: "input",
-    name: "license",
-    message: "What license is applied to this project?",
-  },
-  {
-    type: "input",
-    name: "githubUsername",
-    message: "What is your github username?",
-  },
-  {
-    type: "input",
-    name: "repoName",
-    message: "What is the name of the repository on github?",
-  },
-  {
-    type: "input",
-    name: "email",
-    message: "What is your email address?",
-  },
-];
+  const questions = [
+    {
+      type: "input",
+      name: "position",
+      message: "What it is the title of the position you are applying for?",
+    },
+    {
+      type: "input",
+      name: "responsibilities",
+      message:
+        "What output, duties, and/or responsibilties are associated with the role? (Copy and paste if desired",
+    },
+    {
+      type: "input",
+      name: "firm",
+      message: "What it is name of the firm advertising this position?",
+    },
+    {
+      type: "input",
+      name: "industry",
+      message: "What industry is this firm operating in?",
+    },
+    {
+      type: "input",
+      name: "product",
+      message:
+        "What is this firm, or this segmet of this firm, producing?  What need does that produce meet?",
+    },
+    {
+      type: "input",
+      name: "consumer",
+      message: "Who buys what is being produced? Why?",
+    },
+    {
+      type: "input",
+      name: "competition",
+      message:
+        "What other firms are active in the industry, that this firm is competing against?",
+    },
+    {
+      type: "input",
+      name: "tech-current",
+      message:
+        "What technologies appeared 1-5 years ago that have brought in industry to it's current state? What other factors have shaped in industry in that time frame?",
+    },
+    {
+      type: "input",
+      name: "tech-disruptive",
+      message:
+        "What technologies have appeared in the last 6-12 months that are reshaping the competitive environment?  Who/what is rocking the boat?",
+    },
+    {
+      type: "input",
+      name: "leglislation",
+      message: "How is this industry dependant on legslation and politics?",
+    },
+    {
+      type: "input",
+      name: "other-dependencies",
+      message: "What other factors influence this industry? (Environmental, etc)",
+    },
+  ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
